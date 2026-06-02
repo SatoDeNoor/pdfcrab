@@ -12,6 +12,8 @@
     code { background: #f2f2f7; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
     ul { padding-left: 20px; }
     .subtitle { color: #8e8e93; margin-top: 4px; font-size: 0.95rem; }
+    .option-block { border: 1px solid #e5e5ea; border-radius: 10px; padding: 16px 20px; margin-top: 16px; }
+    .option-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #8e8e93; margin-bottom: 6px; }
     hr { border: none; border-top: 1px solid #e5e5ea; margin: 40px 0; }
   </style>
 </head>
@@ -22,29 +24,50 @@
 
   <hr>
 
-  <h2>Contact</h2>
-  <p>For questions, bug reports, or feedback, email <a href="mailto:abelencev.ik@gmail.com">abelencev.ik@gmail.com</a></p>
+  <h2>Report a Bug or Request a Feature</h2>
 
-  <h2>Reporting a Bug</h2>
-  <p>Please include:</p>
+  <div class="option-block">
+    <div class="option-label">Recommended</div>
+    <p><strong>Open a GitHub issue</strong> — the fastest way to track your report and get updates.</p>
+    <p><a href="https://github.com/SatoDeNoor/pdfcrab/issues/new" target="_blank">github.com/SatoDeNoor/pdfcrab/issues/new →</a></p>
+  </div>
+
+  <div class="option-block">
+    <div class="option-label">Alternative</div>
+    <p><strong>Email</strong> — if you prefer not to use GitHub.</p>
+    <p><a href="mailto:abelencev.ik@gmail.com">abelencev.ik@gmail.com</a></p>
+  </div>
+
+  <h2>What to Include in a Bug Report</h2>
   <ul>
     <li>Device model and iOS version</li>
-    <li>App version (visible in the top bar, e.g. <code>v1.0 (87)</code>)</li>
+    <li>App version (shown in the top bar, e.g. <code>v1.1 (188)</code>)</li>
     <li>Steps to reproduce the issue</li>
+    <li>What you expected vs. what happened</li>
   </ul>
 
   <h2>Privacy</h2>
   <p>PDFCrab processes all files <strong>locally on your device</strong>. No files, text, or personal data are uploaded to any server or third party.</p>
 
   <h2>FAQ</h2>
+
   <p><strong>Can I edit password-protected PDFs?</strong><br>
-  Yes. You will be prompted to enter the password when opening the file. The file remains encrypted after editing.</p>
+  Yes. You will be prompted to enter the password when opening the file. The file stays encrypted after editing. You can also add, remove, or change the password from the PDF Password screen.</p>
+
+  <p><strong>How do I merge PDFs?</strong><br>
+  Tap <em>Merge PDFs</em> on the home screen, pick two or more files, reorder pages if needed, then tap Merge. The result is saved as a new file.</p>
+
+  <p><strong>How do I delete pages?</strong><br>
+  Tap <em>Delete Pages</em> on the home screen, select the pages you want to remove from the thumbnail grid, then tap Delete.</p>
 
   <p><strong>What PDF features are supported?</strong><br>
-  Text editing and repositioning, image editing, and vector object editing on most standard PDFs.</p>
+  Text editing and repositioning, image editing (move, resize, delete), vector object editing, page deletion, PDF merging, and password management.</p>
+
+  <p><strong>Does PDFCrab upload my files?</strong><br>
+  No. All processing happens on-device. Your files never leave your iPhone.</p>
 
   <hr>
-  <p style="font-size:0.85rem; color:#8e8e93;">© 2026 PDFCrab</p>
+  <p style="font-size:0.85rem; color:#8e8e93;">© 2026 Illia Abielientsev</p>
 
 </body>
 </html>
