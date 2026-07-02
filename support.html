@@ -15,9 +15,13 @@
     .option-block { border: 1px solid #e5e5ea; border-radius: 10px; padding: 16px 20px; margin-top: 16px; }
     .option-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: #8e8e93; margin-bottom: 6px; }
     hr { border: none; border-top: 1px solid #e5e5ea; margin: 40px 0; }
+    a.back { display: inline-block; margin-bottom: 32px; color: #007aff; text-decoration: none; font-size: 0.95rem; }
+    a.back:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
+
+  <a class="back" href="index.html">← PDFCrab</a>
 
   <h1>PDFCrab</h1>
   <p class="subtitle">Support</p>
@@ -40,16 +44,31 @@
 
   <h2>What to Include in a Bug Report</h2>
   <ul>
-    <li>Device model and iOS version</li>
-    <li>App version (shown in the top bar, e.g. <code>v1.1 (188)</code>)</li>
+    <li>Device model and iOS/macOS version</li>
+    <li>App version (shown in the top bar, e.g. <code>v1.3.1 (280)</code>)</li>
     <li>Steps to reproduce the issue</li>
     <li>What you expected vs. what happened</li>
   </ul>
 
   <h2>Privacy</h2>
-  <p>PDFCrab processes all files <strong>locally on your device</strong>. No files, text, or personal data are uploaded to any server or third party.</p>
+  <p>PDFCrab processes all files <strong>locally on your device</strong>. No files, text, or personal data are uploaded to any server or third party — including scanned pages processed with OCR.</p>
 
   <h2>FAQ</h2>
+
+  <p><strong>How does OCR work?</strong><br>
+  Tap <em>OCR</em> on the home screen and pick a photo or PDF of a scanned document. PDFCrab recognizes the text on-device and turns it into real, selectable, editable PDF text instead of a flat image. Tap any highlighted word in the result to correct it before saving. You can process files one at a time or in bulk, and save as separate files or merged into one PDF.</p>
+
+  <p><strong>Does OCR support languages other than English?</strong><br>
+  Yes. Text editing and OCR both recognize Cyrillic and CJK (Chinese, Japanese, Korean) scripts in addition to Latin.</p>
+
+  <p><strong>Can I export a PDF to other formats?</strong><br>
+  Yes. Tap <em>Export</em> to turn any PDF into a TXT file, an audio narration, page images, a Word document, or a PowerPoint — directly on your device. This works for every PDF, not just scanned ones.</p>
+
+  <p><strong>How do I reorder or delete pages?</strong><br>
+  Tap <em>Manage Pages</em> on the home screen. Drag pages into a new order, select pages to remove from the thumbnail grid, then save when you're ready.</p>
+
+  <p><strong>Can I add page numbers, rotate pages, or change the page size?</strong><br>
+  Yes. Open <em>Page Tools</em> from the editor to add page numbers in the position you choose, rotate any page, and switch between Standard and Letter page sizes — with a one-tap way back to the original size.</p>
 
   <p><strong>Can I edit password-protected PDFs?</strong><br>
   Yes. You will be prompted to enter the password when opening the file. The file stays encrypted after editing. You can also add, remove, or change the password from the PDF Password screen.</p>
@@ -57,14 +76,11 @@
   <p><strong>How do I merge PDFs?</strong><br>
   Tap <em>Merge PDFs</em> on the home screen, pick two or more files, reorder pages if needed, then tap Merge. The result is saved as a new file.</p>
 
-  <p><strong>How do I delete pages?</strong><br>
-  Tap <em>Delete Pages</em> on the home screen, select the pages you want to remove from the thumbnail grid, then tap Delete.</p>
-
   <p><strong>What PDF features are supported?</strong><br>
-  Text editing and repositioning, image editing (move, resize, delete), vector object editing, page deletion, PDF merging, and password management.</p>
+  Text editing and repositioning, image and vector object editing, OCR for scanned documents, page reordering and deletion, page numbers, page rotation, page size conversion, PDF merging, password management, and export to TXT, audio, images, Word, and PowerPoint.</p>
 
   <p><strong>Does PDFCrab upload my files?</strong><br>
-  No. All processing happens on-device. Your files never leave your iPhone.</p>
+  No. All processing — including OCR — happens on-device. Your files never leave your device.</p>
 
   <hr>
   <p style="font-size:0.85rem; color:#8e8e93;">© 2026 Illia Abielientsev</p>
